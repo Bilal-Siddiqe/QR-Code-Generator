@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +10,24 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
 </head>
-<body>
+<body class="bg-dark">
 
+    <div class="container border border-danger border-5 mt-5 p-2 text-primary">
+        <center>
+            <h1 class="mt-5 mb-5">Bar Code Generator</h1>
+            <img src="/alonso-reyes-haZNHEV2WXQ-unsplash.jpg" alt="Your QR Code Will Display here" class="">
+            <br>
+            <textarea name="" id="" cols="30" rows="1" class="mt-3 mb-3 text-center p-3" ></textarea>
+            <br>
+            <Button class="btn btn-primary btn-lg m-3 p-3 fw-bolder" onclick="QRgenrator()">Generate Bar Code</Button>
+        </center>
+    </div>
 
 
 
