@@ -31,7 +31,7 @@
             <br>
             <input class="m-1 p-1 fw-bold" placeholder="Manufaturer" type="text" id="ProductManf">
             <br>
-            <input class="m-1 p-1 fw-bold" placeholder="Expiry Date" type="text" id="ProductExp">
+            <input class="m-1 p-1 fw-bold" placeholder="Warranty" type="text" id="ProductWar">
             <br>
             <br>
             <Button class="btn btn-primary btn mt-1 mb-2 p-3 fw-bolder" onclick="QRgenrator()">Generate Bar Code</Button>
@@ -40,19 +40,17 @@
     <script>
 
         function QRgenrator() {
-
             let product = new Array();
             product[0] = document.getElementById("ProductName").value;
             product[1] = document.getElementById("ProductPrice").value;
             product[2] = document.getElementById("ProductManf").value;
-            product[3] = document.getElementById("ProductExp").value;
+            product[3] = document.getElementById("ProductWar").value;
 
             userInput = product.join(" || ")
             QRgen = `https://chart.googleapis.com/chart?cht=qr&chs=150x150&chl=${userInput}`;
 
             QRimage = document.getElementById("QRcodeImage");
             QRimage.src = QRcodeImage.value = QRgen;
-
         }
     </script>
 </body>
